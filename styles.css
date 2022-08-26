@@ -10,21 +10,23 @@ body{
 
 .wrap{
    font-size: 13px;
+   width: 100%;
+   min-height: 100vh;
 }
 
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Barlow Semi Condensed;
-    /* margin-top: 50px; */
+    font-family: "Barlow Semi Condensed", sans-serif;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: hsl(210, 46%, 95%);
     display: grid;
     grid-template-columns: 500px 220px 220px;
     gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, 220px);
+    align-content: center;
 }
 
 .box{
@@ -99,6 +101,7 @@ p{
 .Daniel{
     background:url(./images/bg-pattern-quotation.svg) no-repeat hsl(263, 55%, 52%);
     background-position: 80% 0;
+    background-size: 80px 80px;
     grid-column: 1;
     grid-row: 1;
 }
@@ -150,15 +153,6 @@ p{
     height: 460px;
 }
 
-.Daniel,.Jonathan{
-    position: relative;
-    top: 50px;
-}
-
-.Jeanette,.Patrick{
-    position: relative;
-    bottom: 50px;
-}
 
 .attribution { 
     font-size: 11px; 
