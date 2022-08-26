@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+.wrap{
+   font-size: 13px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Barlow Semi Condensed;
+    /* margin-top: 50px; */
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: grid;
+    grid-template-columns: 500px 220px 220px;
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.box{
+    display: flex;
+    gap: 10px;
+}
+
+h1,.mainpara,.mainpara-1{
+    padding-top: 10px;
+}
+
+.mainpara{
+    color: white;
+    opacity: 0.5;
+}
+
+.verified,.verified-1{
+    opacity: 0.3;
+}
+
+.verified{
+    color: white;
+}
+
+.verified,.verified-1,.name,.name-1{
+    font-size: 11px;
+}
+
+.mainpara-1{
+    opacity: 0.5;
+}
+
+.text{
+    color: hsl(210, 46%, 95%);
+}
+
+.text-1,.name-1{
+    color: hsl(217, 19%, 35%);
+}
+
+.name{
+    color: white;
+    font-weight: 100;
+}
+
+.imgdaniel{
+    border: 2px solid rgb(81, 197, 243);
+}
+
+.imgpatrick{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+img{
+    border-radius: 50%;
+    width: 25px;
+}
+
+h1{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 13px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.Daniel{
+    background:url(./images/bg-pattern-quotation.svg) no-repeat hsl(263, 55%, 52%);
+    background-position: 80% 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Jeanette{
+    background-color: white;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.Patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    right: 280px;
+}
+
+.Kira{
+    background-color: white;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.Daniel,.Jonathan,.Jeanette,.Kira,.Patrick{
+    /* margin: 15px; */
+    padding: 20px 20px 30px 20px;
+    border-radius: 5px;
+}
+
+.Jonathan,.Jeanette{
+    width: 220px;
+    height: 220px;
+}
+
+.Daniel,.Patrick{
+    width: 500px;
+    height: 220px;
+}
+
+.Kira{
+    width: 220px;
+    height: 460px;
+}
+
+.Daniel,.Jonathan{
+    position: relative;
+    top: 50px;
+}
+
+.Jeanette,.Patrick{
+    position: relative;
+    bottom: 50px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
